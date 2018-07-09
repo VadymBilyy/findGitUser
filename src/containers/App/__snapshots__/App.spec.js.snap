@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App tests Render component with isProcessing prop 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="top"
+  >
+    <h1>
+      GitHub users search
+    </h1>
+  </div>
+  <div
+    className="bottom"
+  >
+    <div
+      className="inputContainer"
+    >
+      <input
+        className="usernameInput"
+        onChange={[Function]}
+        type="text"
+      />
+      <button
+        className="searchButton"
+        onClick={[Function]}
+      >
+        Find
+      </button>
+    </div>
+    <div>
+      <h3>
+        Loading...
+      </h3>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`App tests Render component with profile 1`] = `
+<App
+  gitUser={
+    Object {
+      "avatar_url": "avatar_url",
+      "blog": "blog",
+      "email": "email",
+      "location": "location",
+      "user": "user",
+    }
+  }
+  isProcessing={false}
+>
+  <div
+    className="container"
+  >
+    <div
+      className="top"
+    >
+      <h1>
+        GitHub users search
+      </h1>
+    </div>
+    <div
+      className="bottom"
+    >
+      <div
+        className="inputContainer"
+      >
+        <input
+          className="usernameInput"
+          onChange={[Function]}
+          type="text"
+        />
+        <button
+          className="searchButton"
+          onClick={[Function]}
+        >
+          Find
+        </button>
+      </div>
+      <div>
+        <Profile
+          gitUser={
+            Object {
+              "avatar_url": "avatar_url",
+              "blog": "blog",
+              "email": "email",
+              "location": "location",
+              "user": "user",
+            }
+          }
+        >
+          <div
+            className="Profile"
+          >
+            <img
+              alt=""
+              src="avatar_url"
+            />
+            <h2 />
+            <div>
+              location
+            </div>
+            <a
+              href="email"
+            >
+              email
+            </a>
+            <a />
+          </div>
+        </Profile>
+      </div>
+    </div>
+  </div>
+</App>
+`;

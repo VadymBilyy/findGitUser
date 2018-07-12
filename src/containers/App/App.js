@@ -33,6 +33,7 @@ export class App extends Component {
     checkUserHandler() {
         if (this.state.enteredName !== '') {
             this.props.dispatch({type: 'FETCHING_USER'})
+
             findUserRequest(this.state.enteredName)
                 .then(res => this.onFetchingSuccess(res))
                 .catch(err => this.onFetchingFailure(err))
